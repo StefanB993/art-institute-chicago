@@ -1,0 +1,33 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  &__list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__button {
+    display: grid;
+    place-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: none;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+
+    &:global(.active) {
+      background-color: var(--clr-accent);
+      color: #fff;
+    }
+  }
+}

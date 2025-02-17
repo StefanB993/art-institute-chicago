@@ -1,0 +1,37 @@
+.artworkDetails {
+  display: grid;
+  gap: 2rem;
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    font-size: var(--fs-500);
+    margin-bottom: 0.5rem;
+  }
+
+  &__artist {
+    font-style: italic;
+    font-weight: 400;
+    font-size: var(--fs-300);
+  }
+
+  &__desc {
+    line-height: 1.5;
+  }
+
+  &__figure {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.artworkDetails__main {
+  display: grid;
+  gap: 2rem;
+}

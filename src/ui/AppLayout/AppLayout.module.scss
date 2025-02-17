@@ -1,0 +1,15 @@
+.appLayout {
+  height: 100vh;
+  max-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  grid-template-columns: minmax(1rem, 1fr) minmax(min-content, 80rem) minmax(
+      1rem,
+      1fr
+    );
+}
+
+.appLayout > :nth-child(2) {
+  overflow-y: scroll;
+  max-height: 100%;
+}
